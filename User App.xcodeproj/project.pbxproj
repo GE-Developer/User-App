@@ -58,16 +58,56 @@
 		EE469A5D2614D0B200DF1112 /* User App */ = {
 			isa = PBXGroup;
 			children = (
-				EE469A5E2614D0B200DF1112 /* AppDelegate.swift */,
-				EE469A602614D0B200DF1112 /* SceneDelegate.swift */,
-				EE469A622614D0B200DF1112 /* LoginViewController.swift */,
-				EE469A782614DAAF00DF1112 /* WelcomeViewController.swift */,
-				EE469A642614D0B200DF1112 /* Main.storyboard */,
-				EE469A672614D0B200DF1112 /* Assets.xcassets */,
-				EE469A692614D0B200DF1112 /* LaunchScreen.storyboard */,
-				EE469A6C2614D0B200DF1112 /* Info.plist */,
+				EEA8CC5A26188E150082899A /* ViewControllers */,
+				EEA8CC5E26188E490082899A /* Models */,
+				EEA8CC5F26188E5B0082899A /* Storyboards */,
+				EEA8CC6126188E8F0082899A /* Supporting */,
+				EEA8CC6026188E700082899A /* Resources */,
 			);
 			path = "User App";
+			sourceTree = "<group>";
+		};
+		EEA8CC5A26188E150082899A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE469A622614D0B200DF1112 /* LoginViewController.swift */,
+				EE469A782614DAAF00DF1112 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEA8CC5E26188E490082899A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEA8CC5F26188E5B0082899A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EE469A642614D0B200DF1112 /* Main.storyboard */,
+				EE469A692614D0B200DF1112 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EEA8CC6026188E700082899A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE469A672614D0B200DF1112 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EEA8CC6126188E8F0082899A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				EE469A5E2614D0B200DF1112 /* AppDelegate.swift */,
+				EE469A602614D0B200DF1112 /* SceneDelegate.swift */,
+				EE469A6C2614D0B200DF1112 /* Info.plist */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "User App/Info.plist";
+				INFOPLIST_FILE = "User App/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "User App/Info.plist";
+				INFOPLIST_FILE = "User App/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
