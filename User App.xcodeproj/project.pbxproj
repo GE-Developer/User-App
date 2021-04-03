@@ -14,6 +14,7 @@
 		EE469A682614D0B200DF1112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE469A672614D0B200DF1112 /* Assets.xcassets */; };
 		EE469A6B2614D0B200DF1112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE469A692614D0B200DF1112 /* LaunchScreen.storyboard */; };
 		EE469A792614DAAF00DF1112 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE469A782614DAAF00DF1112 /* WelcomeViewController.swift */; };
+		EEA8CC66261897200082899A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8CC65261897200082899A /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EE469A6A2614D0B200DF1112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE469A6C2614D0B200DF1112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE469A782614DAAF00DF1112 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		EEA8CC65261897200082899A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		EEA8CC5E26188E490082899A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EEA8CC65261897200082899A /* UserInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				EE469A792614DAAF00DF1112 /* WelcomeViewController.swift in Sources */,
 				EE469A632614D0B200DF1112 /* LoginViewController.swift in Sources */,
 				EE469A5F2614D0B200DF1112 /* AppDelegate.swift in Sources */,
+				EEA8CC66261897200082899A /* UserInfo.swift in Sources */,
 				EE469A612614D0B200DF1112 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
