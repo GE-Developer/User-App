@@ -23,10 +23,10 @@ struct User {
                            tel: "+7 (909) 999-32-79",
                            mail: "on-line-misha@mail.ru",
                            photoOne: "PhotoOne",
-                           photoTwo: "",
-                           photoThree: "",
-                           photoFour: "",
-                           photoFive: "")
+                           photoTwo: "PhotoTwo",
+                           photoThree: "PhotoThree",
+                           photoFour: "PhotoFour",
+                           photoFive: "PhotoFive")
             
         )
     }

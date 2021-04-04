@@ -10,7 +10,7 @@ import UIKit
 class AboutMeViewController: UIViewController {
 
     // MARK: - IB Outlets
-    @IBOutlet var aboutMeImageView: UIImageView!
+    @IBOutlet var photoOneImageView: UIImageView!
     
     @IBOutlet var firstLabel: UILabel!
     @IBOutlet var secondLabel: UILabel!
@@ -30,7 +30,7 @@ class AboutMeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        aboutMeImageView.layer.cornerRadius = 20
+        photoOneImageView.layer.cornerRadius = 20
         
         if let age = age,
            let hobbyOne = hobbyOne,
@@ -43,7 +43,7 @@ class AboutMeViewController: UIViewController {
             thirdLabel.text = "• \(hobbyTwo)"
             fourthLabel.text = "• \(dream)"
             fifthLabel.text = "• \(job)"
-            aboutMeImageView.image = UIImage(named: photoOne)
+            photoOneImageView.image = UIImage(named: photoOne)
         }
         
     }

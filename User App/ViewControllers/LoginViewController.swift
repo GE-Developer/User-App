@@ -28,10 +28,10 @@ class LoginViewController: UIViewController {
         let tabBarController = segue.destination as! UITabBarController
         
         guard let viewControllers = tabBarController.viewControllers else { return }
-        //...
+        
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.login = user.person.name
+                welcomeVC.name = user.person.name
             } else if let aboutMe = viewController as? AboutMeViewController {
                 aboutMe.age = user.person.age
                 aboutMe.hobbyOne = user.person.hobbyOne
@@ -42,9 +42,14 @@ class LoginViewController: UIViewController {
             } else if let contacts = viewController as? ContactsViewController {
                 contacts.tel = user.person.tel
                 contacts.mail = user.person.mail
+            } else if let photo = viewController as? PhotoViewController {
+                photo.photoTwo = user.person.photoTwo
+                photo.photoThree = user.person.photoThree
+                photo.photoFour = user.person.photoFour
+                photo.photoFive = user.person.photoFive
             }
         }
-        //...
+        
     }
     
 

@@ -16,6 +16,7 @@
 		EE469A6B2614D0B200DF1112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE469A692614D0B200DF1112 /* LaunchScreen.storyboard */; };
 		EE469A792614DAAF00DF1112 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE469A782614DAAF00DF1112 /* WelcomeViewController.swift */; };
 		EE98919C2618B48600A60EFD /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98919B2618B48600A60EFD /* AboutMeViewController.swift */; };
+		EE9E116C261A217E008211BF /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E116B261A217E008211BF /* PhotoViewController.swift */; };
 		EEA8CC66261897200082899A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8CC65261897200082899A /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		EE469A6C2614D0B200DF1112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE469A782614DAAF00DF1112 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		EE98919B2618B48600A60EFD /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		EE9E116B261A217E008211BF /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		EEA8CC65261897200082899A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				EE469A782614DAAF00DF1112 /* WelcomeViewController.swift */,
 				EE98919B2618B48600A60EFD /* AboutMeViewController.swift */,
 				EE05789E261A060500C37926 /* ContactsViewController.swift */,
+				EE9E116B261A217E008211BF /* PhotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				EE469A632614D0B200DF1112 /* LoginViewController.swift in Sources */,
 				EE469A5F2614D0B200DF1112 /* AppDelegate.swift in Sources */,
 				EEA8CC66261897200082899A /* User.swift in Sources */,
+				EE9E116C261A217E008211BF /* PhotoViewController.swift in Sources */,
 				EE98919C2618B48600A60EFD /* AboutMeViewController.swift in Sources */,
 				EE469A612614D0B200DF1112 /* SceneDelegate.swift in Sources */,
 			);

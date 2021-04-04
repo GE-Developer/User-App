@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var exitButton: UIButton!
     
     // MARK: - Public properties
-    var login: String!
+    var name: String!
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -23,8 +23,8 @@ class WelcomeViewController: UIViewController {
         
         exitButton.layer.cornerRadius = 10
         
-        if let login = self.login {
-            greetUserLabel.text = String("Welcome, \(login)!")
+        if let name = self.name {
+            greetUserLabel.text = String("Welcome, \(name)!")
             
         }
     }
