@@ -16,8 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var continueButton: UIButton!
     
     // MARK: - Private Properties
-    private let userName = "User"
-    private let password = "password"
+    private let user = User.getUser()
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -26,15 +25,30 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.login = userNameTF.text
+        let tabBarController = segue.destination as! UITabBarController
+        
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        //...
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.login = user.person.name
+            } else if let aboutMe = viewController as? AboutMeViewController {
+                aboutMe.age = user.person.age
+                aboutMe.hobbyOne = user.person.hobbyOne
+                aboutMe.hobbyTwo = user.person.hobbyTwo
+                aboutMe.dream = user.person.dream
+                aboutMe.job = user.person.job
+            }
+        }
+        //...
     }
     
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
+
     // MARK: - IB Actions
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameTF.text = nil
@@ -42,17 +56,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func continueButtonPressed() {
-        if userNameTF.text != userName || passwordTF.text != password {
+        if userNameTF.text != user.login || passwordTF.text != user.password {
             showAlert(with: "Ooops!", and: "Please, enter correct Login and Password")
         }
     }
     
     @IBAction func forgotUserNameButtonPressed() {
-        showAlert(with: "Your login is:", and: userName)
+        showAlert(with: "Your login is:", and: user.login)
     }
     
     @IBAction func forgotPasswordButtonPressed() {
-        showAlert(with: "Your password is:", and: password)
+        showAlert(with: "Your password is:", and: user.password)
     }
     
 }

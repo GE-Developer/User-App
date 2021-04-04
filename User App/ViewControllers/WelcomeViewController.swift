@@ -25,6 +25,7 @@ class WelcomeViewController: UIViewController {
         
         if let login = self.login {
             greetUserLabel.text = String("Welcome, \(login)!")
+            
         }
     }
     
