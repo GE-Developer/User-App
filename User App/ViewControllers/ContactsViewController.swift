@@ -9,12 +9,15 @@ import UIKit
 
 class ContactsViewController: UIViewController {
 
+    // MARK: - IB Outlets
     @IBOutlet var telLabel: UILabel!
     @IBOutlet var mailLabel: UILabel!
     
+    // MARK: - Public Properties
     var tel: String!
     var mail: String!
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +27,5 @@ class ContactsViewController: UIViewController {
             mailLabel.text = "Mail: \(mail)"
         }
     }
-    
-
 
 }

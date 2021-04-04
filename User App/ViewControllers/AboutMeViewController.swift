@@ -9,6 +9,7 @@ import UIKit
 
 class AboutMeViewController: UIViewController {
 
+    // MARK: - IB Outlets
     @IBOutlet var aboutMeImageView: UIImageView!
     
     @IBOutlet var firstLabel: UILabel!
@@ -17,30 +18,34 @@ class AboutMeViewController: UIViewController {
     @IBOutlet var fourthLabel: UILabel!
     @IBOutlet var fifthLabel: UILabel!
     
+    // MARK: - Public Properties
     var age: String!
     var hobbyOne: String!
     var hobbyTwo: String!
     var dream: String!
     var job: String!
+    var photoOne: String!
     
+    // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        aboutMeImageView.layer.cornerRadius = 10
-       // aboutMeImageView.image = UIImage(named: "")
+        aboutMeImageView.layer.cornerRadius = 20
         
         if let age = age,
            let hobbyOne = hobbyOne,
            let hobbyTwo = hobbyTwo,
            let dream = dream,
-           let job = job {
+           let job = job,
+           let photoOne = photoOne {
             firstLabel.text = "• I'm \(age) years old"
             secondLabel.text = "• \(hobbyOne)"
             thirdLabel.text = "• \(hobbyTwo)"
             fourthLabel.text = "• \(dream)"
             fifthLabel.text = "• \(job)"
+            aboutMeImageView.image = UIImage(named: photoOne)
         }
         
     }
-    
+
 }
