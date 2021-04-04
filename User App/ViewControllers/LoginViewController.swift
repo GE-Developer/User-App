@@ -51,12 +51,6 @@ class LoginViewController: UIViewController {
         }
         
     }
-    
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
 
     // MARK: - IB Actions
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -68,6 +62,8 @@ class LoginViewController: UIViewController {
         if userNameTF.text != user.login || passwordTF.text != user.password {
             showAlert(with: "Ooops!", and: "Please, enter correct Login and Password")
         }
+        
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
     @IBAction func forgotUserNameButtonPressed() {
@@ -91,5 +87,23 @@ extension LoginViewController {
         
         alert.addAction(alertOK)
         present(alert, animated: true)
+        }
+}
+
+// MARK: - Keyboard
+extension LoginViewController: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTF {
+            passwordTF.becomeFirstResponder()
+        } else {
+            continueButtonPressed()
+        }
+        return true
     }
 }

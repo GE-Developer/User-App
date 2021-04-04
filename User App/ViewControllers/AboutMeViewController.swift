@@ -30,7 +30,7 @@ class AboutMeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photoOneImageView.layer.cornerRadius = 20
+        photoOneImageView.layer.cornerRadius = photoOneImageView.frame.size.width / 2
         
         if let age = age,
            let hobbyOne = hobbyOne,
