@@ -266,7 +266,7 @@
         <!--Contacts-->
         <scene sceneID="lwS-hV-utt">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ewB-ef-Kq9" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ewB-ef-Kq9" customClass="ContactsViewController" customModule="User_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DZP-TN-JiM">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,22 +275,22 @@
                                 <rect key="frame" x="-205" y="-56" width="839" height="1038"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="SEb-aT-btx">
-                                <rect key="frame" x="20" y="144" width="388" height="36"/>
+                                <rect key="frame" x="20" y="74" width="388" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Rgm-Hn-cLu">
-                                <rect key="frame" x="20" y="280" width="388" height="96"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Rgm-Hn-cLu">
+                                <rect key="frame" x="50" y="140" width="358" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-kf-mTe">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-kf-mTe">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="mzd-Mk-gcz">
-                                        <rect key="frame" x="0.0" y="66" width="388" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="mzd-Mk-gcz">
+                                        <rect key="frame" x="0.0" y="60" width="358" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -301,23 +301,27 @@
                         <viewLayoutGuide key="safeArea" id="9XL-td-Etd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Rgm-Hn-cLu" firstAttribute="top" secondItem="SEb-aT-btx" secondAttribute="bottom" constant="100" id="5Oh-jJ-QMH"/>
-                            <constraint firstItem="Rgm-Hn-cLu" firstAttribute="leading" secondItem="9XL-td-Etd" secondAttribute="leading" constant="20" id="9AC-2j-WZV"/>
+                            <constraint firstItem="Rgm-Hn-cLu" firstAttribute="top" secondItem="SEb-aT-btx" secondAttribute="bottom" constant="30" id="5Oh-jJ-QMH"/>
+                            <constraint firstItem="Rgm-Hn-cLu" firstAttribute="leading" secondItem="9XL-td-Etd" secondAttribute="leading" constant="50" id="9AC-2j-WZV"/>
                             <constraint firstItem="fW9-4J-pNF" firstAttribute="leading" secondItem="DZP-TN-JiM" secondAttribute="leading" constant="-205" id="A1c-1s-aad"/>
                             <constraint firstItem="SEb-aT-btx" firstAttribute="leading" secondItem="9XL-td-Etd" secondAttribute="leading" constant="20" id="Bxw-n2-1QE"/>
                             <constraint firstAttribute="bottom" secondItem="fW9-4J-pNF" secondAttribute="bottom" constant="-56" id="EQe-9r-gnF"/>
                             <constraint firstItem="fW9-4J-pNF" firstAttribute="top" secondItem="DZP-TN-JiM" secondAttribute="top" constant="-56" id="Exg-Gm-u2A"/>
                             <constraint firstItem="9XL-td-Etd" firstAttribute="trailing" secondItem="SEb-aT-btx" secondAttribute="trailing" constant="20" id="hQE-WN-owz"/>
-                            <constraint firstItem="SEb-aT-btx" firstAttribute="top" secondItem="9XL-td-Etd" secondAttribute="top" constant="100" id="oAI-fD-bM8"/>
+                            <constraint firstItem="SEb-aT-btx" firstAttribute="top" secondItem="9XL-td-Etd" secondAttribute="top" constant="30" id="oAI-fD-bM8"/>
                             <constraint firstAttribute="trailing" secondItem="fW9-4J-pNF" secondAttribute="trailing" constant="-206" id="pAf-Hq-tBH"/>
                             <constraint firstItem="9XL-td-Etd" firstAttribute="trailing" secondItem="Rgm-Hn-cLu" secondAttribute="trailing" constant="20" id="qW4-G0-k6a"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.square.fill.and.at.rectangle" catalog="system" id="nx0-Iu-ibl"/>
+                    <connections>
+                        <outlet property="mailLabel" destination="mzd-Mk-gcz" id="gX5-ia-icz"/>
+                        <outlet property="telLabel" destination="5MV-kf-mTe" id="AXK-oF-lps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AKR-zu-UGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2914" y="94"/>
+            <point key="canvasLocation" x="2906" y="94"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TVV-Hz-NrH">

@@ -27,6 +27,7 @@ class AboutMeViewController: UIViewController {
         super.viewDidLoad()
         
         aboutMeImageView.layer.cornerRadius = 10
+       // aboutMeImageView.image = UIImage(named: "")
         
         if let age = age,
            let hobbyOne = hobbyOne,

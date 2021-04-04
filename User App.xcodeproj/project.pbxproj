@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE05789F261A060500C37926 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE05789E261A060500C37926 /* ContactsViewController.swift */; };
 		EE469A5F2614D0B200DF1112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE469A5E2614D0B200DF1112 /* AppDelegate.swift */; };
 		EE469A612614D0B200DF1112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE469A602614D0B200DF1112 /* SceneDelegate.swift */; };
 		EE469A632614D0B200DF1112 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE469A622614D0B200DF1112 /* LoginViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE05789E261A060500C37926 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		EE469A5B2614D0B200DF1112 /* User App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "User App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE469A5E2614D0B200DF1112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE469A602614D0B200DF1112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				EE469A622614D0B200DF1112 /* LoginViewController.swift */,
 				EE469A782614DAAF00DF1112 /* WelcomeViewController.swift */,
 				EE98919B2618B48600A60EFD /* AboutMeViewController.swift */,
+				EE05789E261A060500C37926 /* ContactsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE469A792614DAAF00DF1112 /* WelcomeViewController.swift in Sources */,
+				EE05789F261A060500C37926 /* ContactsViewController.swift in Sources */,
 				EE469A632614D0B200DF1112 /* LoginViewController.swift in Sources */,
 				EE469A5F2614D0B200DF1112 /* AppDelegate.swift in Sources */,
 				EEA8CC66261897200082899A /* User.swift in Sources */,

@@ -21,7 +21,13 @@ struct User {
                            dream: "Want to climb all 7 Peaks",
                            job: "Want to become an IOS-Developer",
                            tel: "+7(909)999-32-79",
-                           mail: "on-line-misha@mail.ru")
+                           mail: "on-line-misha@mail.ru",
+                           photo1: "",
+                           photo2: "",
+                           photo3: "",
+                           photo4: "",
+                           photo5: "")
+            
         )
     }
 }
@@ -35,4 +41,9 @@ struct Person {
     let job: String
     let tel: String
     let mail: String
+    let photo1: String
+    let photo2: String
+    let photo3: String
+    let photo4: String
+    let photo5: String
 }

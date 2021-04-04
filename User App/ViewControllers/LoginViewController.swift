@@ -38,6 +38,9 @@ class LoginViewController: UIViewController {
                 aboutMe.hobbyTwo = user.person.hobbyTwo
                 aboutMe.dream = user.person.dream
                 aboutMe.job = user.person.job
+            } else if let contacts = viewController as? ContactsViewController {
+                contacts.tel = user.person.tel
+                contacts.mail = user.person.mail
             }
         }
         //...
